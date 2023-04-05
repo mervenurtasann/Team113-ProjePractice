@@ -5,7 +5,8 @@ public class Ogretmen extends Kisi {
     private String bolum;
     private int sicilNo;
 
-    public Ogretmen(String bolum, String sAd, String tcNo, int sicilNo, String s, int no) {
+    public Ogretmen(String ad, String sAd, String tcNo, int yas, String bolum, int sicilNo) {
+        super(ad, sAd, tcNo, yas);
         this.bolum = bolum;
         this.sicilNo = sicilNo;
     }
