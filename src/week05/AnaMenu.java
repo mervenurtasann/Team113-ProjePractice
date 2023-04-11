@@ -23,6 +23,8 @@ public class AnaMenu {
         char secim = scan.next().toUpperCase().charAt(0);
         switch (secim) {
             case '1': {
+                OgrenciIslemleri ogrenciIslemleri=new OgrenciIslemleri();
+                ogrenciIslemleri.ogrenciMenu();
             }
             case '2': {
                 OgretmenIslemleri ogretmenIslemleri = new OgretmenIslemleri();
