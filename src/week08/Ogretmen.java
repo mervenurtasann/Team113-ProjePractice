@@ -50,16 +50,7 @@ public class Ogretmen {
                     ogretmenEkleme();
                     break;
                 case "5": // Kimlik No Ile Kayit Silme
-                    System.out.printf("Silinecek ogretmen kimlik no giriniz : ");
-                    String silinecekOgretmen = scan.nextLine();
-
-                    String silinecekValue = ogretmenlerMap.get(silinecekOgretmen);
-
-                    String sonucValue = ogretmenlerMap.remove(silinecekOgretmen);
-                    try {
-                        boolean sonuc = sonucValue.equals(silinecekValue);
-                    } catch (Exception e) {
-                        System.out.println("Istediginiz Tc No ile ogretmen bulunamadi");                    }
+                    tcNoIleOgretmenSil();
                     break;
                 case "A":
                 case "a":
@@ -75,6 +66,21 @@ public class Ogretmen {
 
         } while (!tercih.equalsIgnoreCase("q"));
         Depo.projeDurdur();
+    }
+
+    public static void tcNoIleOgretmenSil() {
+        System.out.println("Silinecek ogretmen kimlik no giriniz");
+        String silinecekOgretmen = scan.nextLine();
+
+        String silinecekValue = ogretmenlerMap.get(silinecekOgretmen);
+
+        String sonucValue = ogretmenlerMap.remove(silinecekOgretmen);
+
+        try {
+            boolean sonuc = sonucValue.equals(silinecekValue);
+        } catch (Exception e) {
+            System.out.println("Istediginiz Tc numarasi ile ogretmen bulunamadi");
+        }
     }
 
     public static void ogretmenEkleme() {
