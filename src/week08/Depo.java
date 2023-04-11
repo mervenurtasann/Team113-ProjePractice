@@ -27,6 +27,7 @@ public class Depo {
                     Ogretmen.ogretmenMenu();
                     break;
                 case "3":  // Ogrenci menu
+                    Ogrenci.ogrenciMenu();
                     break;
                 case "q":  // Cikis
                 case "Q":
@@ -50,5 +51,6 @@ public class Depo {
 
     public static void projeDurdur() {
         System.out.println("Okul projesinden ciktiniz");
+        System.exit(0);
     }
 }
