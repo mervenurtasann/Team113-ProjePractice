@@ -1,11 +1,7 @@
 package hastaneProjesi;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class HastaneRunner {
-
-    private static Hastane hastane = new Hastane();
 
     public static void main(String[] args) {
 
