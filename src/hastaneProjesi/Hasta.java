@@ -6,6 +6,9 @@ public class Hasta extends Hastane{
     private String soyIsim;
     private int hastaID;
 
+    public Hasta() {
+    }
+
     public String getIsim() {
         return isim;
     }

@@ -1,6 +1,6 @@
 package hastaneProjesi;
 
-public class Hastane{
+public class Hastane extends VeriBankasi {
     public Hastane() {
     }
 }

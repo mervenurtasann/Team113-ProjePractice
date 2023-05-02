@@ -1,10 +1,9 @@
 package hastaneProjesi;
 
-
 import java.util.Scanner;
 
 public class HastaneRunner {
-    private static Hastane hastane = new Hastane();
+    private static VeriBankasi hastane = new VeriBankasi();
 
     public static void main(String[] args) {
 
@@ -12,7 +11,6 @@ public class HastaneRunner {
 
         System.out.print("Hasta durumunu girin: ");
         String hastaDurumu = scan.nextLine();
-
         String unvan = doktorUnvan(hastaDurumu);
         System.out.println("Hasta durumuna göre doktor unvanı: " + unvan);
 
@@ -24,7 +22,9 @@ public class HastaneRunner {
         System.out.print("Bir hasta durumu girin: ");
         String hastaDurumuBul = scan.nextLine();
         Hasta hasta = hastaDurumuBul(hastaDurumuBul);
-        System.out.println("Hasta bilgileri: " + hasta);
+        System.out.println("Hasta durumu: " + hasta);
+        Hasta hasta2 = hastaBul(hastaDurumuBul);
+        System.out.println("Hasta bilgileri: " + hasta2);
 
     }
 

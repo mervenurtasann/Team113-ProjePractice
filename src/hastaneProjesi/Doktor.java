@@ -6,6 +6,8 @@ public class Doktor extends Hastane{
     private String soyIsim;
     private String unvan;
 
+    public Doktor() {
+    }
 
     public String getIsim() {
         return isim;

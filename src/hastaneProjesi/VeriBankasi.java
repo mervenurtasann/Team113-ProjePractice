@@ -2,7 +2,7 @@ package hastaneProjesi;
 
 import java.util.ArrayList;
 
-public class VeriBankasi extends Hastane{
+public class VeriBankasi{
 
     static String[] doctorIsimleri = {"Anthony","Sanyaj","Mehmet","Jana","Jill","Jessica"};
     static String[] doctorSoyIsimleri = {"Fauci","Gupta","Oz","Goodall","Biden","Tristen"};
