@@ -23,7 +23,10 @@ public class HastaneRunner {
         String hastaDurumuBul = scan.nextLine();
         Hasta hasta = hastaDurumuBul(hastaDurumuBul);
         System.out.println("Hasta durumu: " + hasta);
-        Hasta hasta2 = hastaBul(hastaDurumuBul);
+
+        System.out.print("Bir hasta durumu girin: ");
+        String hastaDurumuBul2 = scan.nextLine();
+        Hasta hasta2 = hastaBul(hastaDurumuBul2);
         System.out.println("Hasta bilgileri: " + hasta2);
 
     }
