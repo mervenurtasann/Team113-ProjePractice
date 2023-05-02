@@ -1,6 +1,6 @@
 package hastaneProjesi;
 
-public class Hasta {
+public class Hasta extends Hastane{
 
     private String isim;
     private String soyIsim;

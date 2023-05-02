@@ -1,16 +1,30 @@
 package hastaneProjesi;
 
 
+import java.util.Scanner;
+
 public class HastaneRunner {
+    private static Hastane hastane = new Hastane();
 
     public static void main(String[] args) {
 
-        String hastaDurumu = String.valueOf(hastaDurumuBul("allerji"));
-        System.out.println(hastaDurumu);
-        String unvan = doktorUnvan("allerji");
-        System.out.println(unvan);
-        System.out.println(doktorBul("Immunology"));
-        System.out.println(hastaBul("allerji"));
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Hasta durumunu girin: ");
+        String hastaDurumu = scan.nextLine();
+
+        String unvan = doktorUnvan(hastaDurumu);
+        System.out.println("Hasta durumuna göre doktor unvanı: " + unvan);
+
+        System.out.print("Bir doktor unvanı girin: ");
+        String doktorUnvan = scan.nextLine();
+        Doktor doktor = doktorBul(doktorUnvan);
+        System.out.println("Doktor bilgileri: " + doktor);
+
+        System.out.print("Bir hasta durumu girin: ");
+        String hastaDurumuBul = scan.nextLine();
+        Hasta hasta = hastaDurumuBul(hastaDurumuBul);
+        System.out.println("Hasta bilgileri: " + hasta);
 
     }
 
