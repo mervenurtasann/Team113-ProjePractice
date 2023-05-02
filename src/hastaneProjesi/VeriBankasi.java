@@ -12,4 +12,5 @@ public class VeriBankasi{
     static String[] durumlar = {"Allerji","Covid-19", "Brian tumors", "Primate infectious", "Migren", "Heart diseases"};
     static int[] hastaIDleri= {111,222,333,444,555,666};
 
+
 }

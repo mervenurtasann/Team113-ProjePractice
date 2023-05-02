@@ -21,7 +21,7 @@ public class HastaneRunner {
 
         System.out.print("Bir hasta durumu girin: ");
         String hastaDurumuBul = scan.nextLine();
-        Hasta hasta = hastaDurumuBul(hastaDurumuBul);
+        Durum hasta = hastaDurumuBul(hastaDurumuBul);
         System.out.println("Hasta durumu: " + hasta);
 
         System.out.print("Bir hasta durumu girin: ");

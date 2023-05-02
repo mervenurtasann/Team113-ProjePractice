@@ -1,6 +1,6 @@
 package hastaneProjesi;
 
-public class Hasta extends Hastane{
+public class Hasta{
 
     private String isim;
     private String soyIsim;
@@ -36,9 +36,8 @@ public class Hasta extends Hastane{
     @Override
     public String toString() {
         return "Hasta " +
-                "Isim = " + isim +
-                ", Soyisim = " + soyIsim +
-                ", Hasta ID = " + hastaID;
-
+                "isim = " + isim +
+                ", soyIsim = " + soyIsim +
+                ", hastaID = " + hastaID;
     }
 }

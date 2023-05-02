@@ -1,6 +1,6 @@
 package hastaneProjesi;
 
-public class Durum extends Hasta{
+public class Durum{
 
     private String aktualDurum;
     private boolean aciliyet;
